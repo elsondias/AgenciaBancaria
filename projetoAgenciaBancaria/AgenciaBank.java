@@ -138,9 +138,15 @@ public class AgenciaBank {
                 Double valor = input.nextDouble();
 
                 contaRemetente.transferir(contaDestinatario, valor);
-            }
-        }
+                 
+    }else {
+        System.out.println("A conta para depósito não foi encontrada");
     }
+}else{
+        System.out.println("A conta para depósito não foi encontrada");
+    }
+        operacoes(); 
+ }
 
     public static void listarContas(){
         if (contasBancarias.size() > 0) {
